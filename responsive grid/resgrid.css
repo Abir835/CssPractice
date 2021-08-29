@@ -1,0 +1,80 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1.5fr 1.5fr .3fr;
+    height: 100vh;
+    grid-template-areas: "nav nav nav nav nav nav"
+    "sidebar main main main main main"
+    "sidebar left left right right right"
+    "footer footer footer footer footer footer";
+
+}
+
+nav{
+    grid-area: nav;
+    background-color: blueviolet;
+}
+main{
+    grid-area: main;
+    background-color: red;
+
+}
+#sidebar{
+    grid-area: sidebar;
+    background-color: chartreuse;
+}
+#left{
+    grid-area: left;
+    background-color: darkcyan;
+}
+#right{
+    grid-area: right;
+    background-color: darkgreen;
+}
+footer{
+    grid-area: footer;
+    background-color: darkslateblue;
+}
+
+@media only screen and (max-width: 750px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr 2fr 1.5fr 1.5fr 1.5fr .4fr;
+        grid-template-areas: "nav"
+        "sidebar"
+        "main"
+        "left"
+        "right"
+        "footer";
+    }
+}
+
+
+.mediaicon{
+    margin-top: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.mediaicon a{
+    background-color: rgb(230, 209, 209);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 1px 2px 2px 2px rgb(175, 157, 157);
+    margin: 10px;
+
+}
+.mediaicon a i{
+    transition: all .3s linear;
+
+}
+
+.mediaicon a i:hover{
+    transform: scale(1.4);
+}

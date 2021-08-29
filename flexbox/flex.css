@@ -1,0 +1,48 @@
+@media (min-width: 768px){
+    .container1{
+        display: flex;
+        background-color: yellowgreen;
+        /* align-items: flex-end; */
+        /* flex-direction: column-reverse */
+    }
+    .container2{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.container1 div{
+    border: black 1px solid;
+    padding: 20px;
+}
+
+.box{
+    flex-basis: 20%;
+    padding: 20px;
+    border: black 1px solid;
+    
+}
+.box1{
+    flex: 1;
+    order: 2;
+}
+.box2{
+    flex: 1;
+    order: 1;
+}
+.box3{
+    flex: 1;
+    order: 3;
+}
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.test{
+    background-color: chartreuse;
+    padding: 28px;
+    border: chocolate 1px solid;
+    flex-basis: 5x;
+}
